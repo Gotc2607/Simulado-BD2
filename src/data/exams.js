@@ -4,175 +4,114 @@ export const exams = [
     title: "Avaliação 1 (Av1)",
     description: "Banco completo com as 26 questões",
     questions: [
-      // --- Parte 1 (Original Av1) ---
       {
         id: 1,
-        text: "O banco de dados orientado a grafos Neo4j baseia-se num modelo de grafos de Propriedades. A estrutura fundamental desse modelo é composta por três componentes principais:\n________, Relacionamentos e ________.",
-        options: [
-          "Nós",
-          "Conjuntos",
-          "Arestas",
-          "Graus"
-        ],
-        correctAnswer: 0
+        text: "O banco de dados orientado a grafos Neo4j baseia-se num modelo de grafos de Propriedades. A estrutura fundamental desse modelo é composta por três componentes principais: \n_________, Relacionamentos e _________.",
+        options: ["Graus", "Conjuntos", "Arestas", "Nós"],
+        correctAnswer: 3
       },
       {
         id: 2,
-        text: "Na sintaxe do Cypher mostrada abaixo, que seria usada para a criação de um nó e um relacionamento no Neo4j:\nCREATE (p1:Person)-[r:KNOWS]->(p2:Person)\nQuais são os tipos/labels dos nós e o tipo do relacionamento criados?",
-        options: [
-          "p1, p2, r",
-          "(p1:Person), [r:KNOWS], (p2:Person)",
-          "Person, KNOWS",
-          "CREATE, KNOWS, Person"
-        ],
-        correctAnswer: 2
+        text: "Na sintaxe do Cypher mostrada abaixo, que seria usada para a criação de um nó e um relacionamento no Neo4j: \nCREATE (p1:Person)-[r:KNOWS]->(p2:Person)\nQuais são os tipos/labels dos nós e o tipo do relacionamento criados?",
+        options: ["CREATE, KNOWS, Person", "Person, KNOWS", "(p1:Person), [r:KNOWS], (p2:Person)", "p1, p2, r"],
+        correctAnswer: 1
       },
       {
         id: 3,
         text: "Num banco de dados de Grafos os relacionamentos não são representados por:",
-        options: [
-          "Matriz de Incidência",
-          "Lista de Adjacência",
-          "Matriz de Adjacência",
-          "Grafos"
-        ],
-        correctAnswer: 3
+        options: ["Matriz de Adjacência", "Grafos", "Lista de Adjacência", "Matriz de Incidência"],
+        correctAnswer: 1
       },
       {
         id: 4,
-        text: "Grafos (ou redes) são estruturas de dados compostas de duas partes básicas: ________ (ou vértices) e ________ (ou arestas, ou arcos).",
-        options: [
-          "Objetos e Ligações",
-          "Nós e Links",
-          "Entidades e Relacionamentos",
-          "Nós e Relacionamentos"
-        ],
-        correctAnswer: 3
+        text: "Grafos (ou redes) são estruturas de dados compostas de duas partes básicas: _______ (ou vértices) e _______ (ou arestas, ou arcos). Qual alternativa tem nomes alternativos para essas partes?",
+        options: ["Nós e Relacionamentos", "Entidades e Relacionamentos", "Nós e Links", "Objetos e Ligações"],
+        correctAnswer: 0
       },
       {
         id: 5,
         text: "O relacionamento abaixo foi criado com qual instrução/código:\n(Keanu Reeves)-[ACTED_IN]->(The Matrix)",
         options: [
-          "CREATE (p:Person {name: 'Keanu Reeves'})-[r:ACTED_IN {roles:['Neo']}]->(m:Movie {title:'The Matrix'})",
-          "CREATE (p:Person {name: 'Keanu Reeves'})<-[r:ACTED_IN {roles:['Neo']}]-(m:Movie {title:'The Matrix'})",
+          "CREATE (p:Person {name: 'Keanu Reeves'})-[ACTED_IN {roles:['Neo']}]->(m:Movie {title:'The Matrix'})",
           "CREATE (p:Person {name: 'Keanu Reeves'})-[r:ACTED_IN {roles:['Neo']}]-(m:Movie {title:'The Matrix'})",
-          "CREATE (p:Person {name: 'Keanu Reeves'})-[ACTED_IN {roles:['Neo']}]->(m:Movie {title:'The Matrix'})"
+          "CREATE (p:Person {name: 'Keanu Reeves'})<-[r:ACTED_IN {roles:['Neo']}]-(m:Movie {title:'The Matrix'})",
+          "CREATE (p:Person {name: 'Keanu Reeves'})-[r:ACTED_IN {roles:['Neo']}]->(m:Movie {title:'The Matrix'})"
         ],
-        correctAnswer: 0
+        correctAnswer: 3
       },
       {
         id: 6,
         text: "Em um grafo de rede social, com 6 vértices representando pessoas (A, B, C, D, E, F) e arestas representando 'amizades', qual a distância (em saltos/arestas) entre a pessoa 'A' e a pessoa 'F'?",
-        options: [
-          "2",
-          "5",
-          "3",
-          "4"
-        ],
-        correctAnswer: 0
+        options: ["5", "4", "3", "2"],
+        correctAnswer: 3
       },
-      
-      // --- Parte 2 (Prova 2) ---
+
+      // --- Prova 2 ---
       {
         id: 7,
-        text: "Na estrutura de dados em arvore (uma especialização de um grafo), a principal característica é:",
+        text: "Na estrutura de dados em árvore (uma especialização de um grafo), a principal característica é:",
         options: [
-          "As folhas não podem ter filhos, ou seja, grau zero de saída.",
-          "Não possui um nó raiz.",
+          "Pode conter ciclos.",
           "Cada nó pode ter múltiplos pais.",
-          "Pode conter ciclos."
+          "Não possui um nó raiz.",
+          "As folhas não podem ter filhos, ou seja, grau zero de saída."
         ],
-        correctAnswer: 0
+        correctAnswer: 3
       },
       {
         id: 8,
         text: "No Neo4j o uso dos colchetes [] representa:",
-        options: [
-          "Propriedades",
-          "Relacionamentos",
-          "Labels",
-          "Nós"
-        ],
-        correctAnswer: 1
+        options: ["Labels", "Nós", "Relacionamentos", "Propriedades"],
+        correctAnswer: 2
       },
       {
         id: 9,
-        text: "Um banco de dados NOSQL do tipo \"Chave-Valor\" armazena dados onde cada valor é acessado através de uma chave unica. No redis, quais comandos são usados para salvar e recuperar campos de um hash?",
-        options: [
-          "SADD e SMEMBERS",
-          "LPUSH e LPOP",
-          "SET e GET",
-          "HSET e HGET"
-        ],
+        text: "Um banco de dados NoSQL do tipo 'Chave-Valor' armazena dados onde cada valor é acessado através de uma chave única. No Redis, quais comandos são usados para salvar e recuperar campos de um hash?",
+        options: ["SADD e SMEMBERS", "LPUSH e LPOP", "SET e GET", "HSET e HGET"],
         correctAnswer: 3
       },
       {
         id: 10,
         text: "Em JSON a estrutura que representa uma coleção ordenada de valores é:",
-        options: [
-          "Array",
-          "Objeto",
-          "Number",
-          "String"
-        ],
+        options: ["Array", "String", "Number", "Objeto"],
         correctAnswer: 0
       },
       {
         id: 11,
         text: "Qual formato de dados do MongoDB?",
-        options: [
-          "BSON",
-          "JSON",
-          "CSV",
-          "XML"
-        ],
-        correctAnswer: 0
+        options: ["CSV", "XML", "JSON", "BSON"],
+        correctAnswer: 3
       },
 
-      // --- Parte 3 (Av3) ---
+      // --- Av3 ---
       {
         id: 12,
         text: "As propriedades de uma transação, geralmente chamadas de propriedades ACID, determinam que uma transação é indivisível, ou seja, todas as suas operações devem ser executadas com sucesso ou nenhuma delas deve ser executada. A qual propriedade essa descrição se refere?",
-        options: [
-          "Atomicidade",
-          "Isolamento",
-          "Durabilidade",
-          "Consistência"
-        ],
-        correctAnswer: 0
+        options: ["Consistência", "Isolamento", "Durabilidade", "Atomicidade"],
+        correctAnswer: 3
       },
       {
         id: 13,
         text: "Uma transação que foi concluída com sucesso e teve todas as suas alterações gravadas de forma permanente no banco de dados está em qual estado?",
-        options: [
-          "Ativa",
-          "Efetivada (Committed)",
-          "Falha",
-          "Abortada"
-        ],
-        correctAnswer: 1
+        options: ["Ativa", "Falha", "Abortada", "Efetivada (Committed)"],
+        correctAnswer: 3
       },
       {
         id: 14,
         text: "O problema do 'Deadlock' (Impasse) em controle de concorrência ocorre quando:",
         options: [
-          "Uma transação lê um dado que está sendo modificado por outra transação não efetivada.",
-          "Duas ou mais transações ficam esperando indefinidamente pelo bloqueio de recursos uns dos outros.",
           "O banco de dados falha e perde os dados antes do commit.",
-          "Duas transações atualizam o mesmo dado simultaneamente sem bloqueio."
+          "Duas transações atualizam o mesmo dado simultaneamente sem bloqueio.",
+          "Duas ou mais transações ficam esperando indefinidamente pelo bloqueio de recursos uns dos outros.",
+          "Uma transação lê um dado que está sendo modificado por outra transação não efetivada."
         ],
-        correctAnswer: 1
+        correctAnswer: 2
       },
       {
         id: 15,
         text: "Em controle de concorrência, o protocolo de bloqueio em duas fases (2PL) garante:",
-        options: [
-          "Seriabilidade (Serializability).",
-          "Recuperabilidade.",
-          "Que transações nunca sejam abortadas.",
-          "Ausência de deadlocks."
-        ],
-        correctAnswer: 0
+        options: ["Recuperabilidade", "Ausência de deadlocks", "Que transações nunca sejam abortadas", "Seriabilidade (Serializability)"],
+        correctAnswer: 3
       },
       {
         id: 16,
@@ -186,24 +125,24 @@ export const exams = [
         correctAnswer: 1
       },
 
-      // --- Parte 4 (Simulado P3) ---
+      // --- Simulado P3 ---
       {
         id: 17,
         text: "Um escalonamento (schedule) de transações é dito serial se:",
         options: [
+          "Ele permite maior concorrência do que outros tipos de escalonamentos.",
           "Ele garante a ausência de anomalias como leitura suja.",
-          "As transações são executadas uma após a outra, sem intercalação de suas operações.",
           "As operações de diferentes transações se intercalam de forma otimizada.",
-          "Ele permite maior concorrência do que outros tipos de escalonamentos."
+          "As transações são executadas uma após a outra, sem intercalação de suas operações."
         ],
-        correctAnswer: 1
+        correctAnswer: 3
       },
       {
         id: 18,
         text: "Considere o problema da Leitura Suja (Dirty Read). Ele ocorre quando:",
         options: [
-          "Uma transação lê um conjunto de registros e depois descobre novos registros inseridos por outra transação (Phantom read).",
-          "Uma transação lê duas vezes o mesmo dado e obtém valores diferentes porque outra transação o alterou nesse meio tempo (Non-repeatable read).",
+          "Uma transação lê um conjunto de registros e depois descobre novos registros inseridos por outra transação.",
+          "Uma transação lê duas vezes o mesmo dado e obtém valores diferentes porque outra o alterou.",
           "Duas transações gravam no mesmo item de dado simultaneamente.",
           "Uma transação lê um valor modificado por outra transação que ainda não foi efetivada (committed)."
         ],
@@ -212,13 +151,8 @@ export const exams = [
       {
         id: 19,
         text: "Qual dos seguintes níveis de isolamento é o mais restritivo no SQL, prevenindo Leituras Sujas, Leituras Não-Repetíveis e Leituras Fantasmas?",
-        options: [
-          "READ COMMITTED",
-          "REPEATABLE READ",
-          "SERIALIZABLE",
-          "READ UNCOMMITTED"
-        ],
-        correctAnswer: 2
+        options: ["READ UNCOMMITTED", "READ COMMITTED", "REPEATABLE READ", "SERIALIZABLE"],
+        correctAnswer: 3
       },
       {
         id: 20,
@@ -235,69 +169,49 @@ export const exams = [
         id: 21,
         text: "O grafo de precedência (ou grafo de serialização) é usado para:",
         options: [
+          "Garantir a propriedade de Durabilidade.",
           "Detectar deadlocks entre transações.",
-          "Determinar se um escalonamento é serializável quanto ao conflito (conflict serializable).",
           "Definir a ordem em que as transações chegaram ao sistema.",
-          "Garantir a propriedade de Durabilidade."
+          "Determinar se um escalonamento é serializável quanto ao conflito (conflict serializable)."
         ],
-        correctAnswer: 1
+        correctAnswer: 3
       },
 
-      // --- Parte 5 (Simulado) ---
+      // --- Simulado ---
       {
         id: 22,
-        text: "O componente do SGBD que é responsável por garantir a propriedade de Atomicidade é o:",
-        options: [
-          "Gerenciador de Buffer",
-          "Gerenciador de Transações",
-          "Subsistema de Recuperação",
-          "Compilador de Consultas"
-        ],
+        text: "O SGBD deve garantir que, se uma transação executar algumas atualizações e depois falhar, essas atualizações sejam desfeitas da base de dados. Essa propriedade é a:",
+        options: ["Durabilidade", "Isolamento", "Atomicidade", "Consistência"],
         correctAnswer: 2
       },
       {
         id: 23,
         text: "Um escalonamento é dito recuperável se...",
         options: [
-          "Garante a ausência de deadlocks.",
+          "Ele não contém ciclos no grafo de precedência.",
           "Nenhuma transação no escalonamento for efetivada (committed) até que todas as transações que gravaram itens lidos por ela sejam efetivadas.",
-          "As operações são executadas de forma estritamente sequencial.",
-          "Todas as transações abortadas podem ser reexecutadas."
+          "Ele for equivalente a um escalonamento serial.",
+          "Nenhuma transação lê dados que foram gravados por transações não efetivadas."
         ],
         correctAnswer: 1
       },
       {
         id: 24,
         text: "Qual anomalia ocorre quando uma transação T1 lê um item modificado por T2, e T2 depois é abortada?",
-        options: [
-          "Atualização perdida",
-          "Leitura suja",
-          "Leitura não repetível",
-          "Leitura fantasma"
-        ],
-        correctAnswer: 1
+        options: ["Atualização Perdida", "Leitura não-repetível", "Leitura Suja", "Leitura fantasma"],
+        correctAnswer: 2
       },
       {
         id: 25,
         text: "No Redis, qual estrutura de dados usaríamos para modelar um conjunto de tags únicas associadas a um artigo?",
-        options: [
-          "List",
-          "Hash",
-          "Set",
-          "String"
-        ],
-        correctAnswer: 2
+        options: ["List", "Hash", "String", "Set"],
+        correctAnswer: 3
       },
       {
         id: 26,
         text: "Em MongoDB, o equivalente a uma 'Tabela' em bancos relacionais é chamado de:",
-        options: [
-          "Documento",
-          "Banco de dados",
-          "Coleção",
-          "Chave"
-        ],
-        correctAnswer: 2
+        options: ["Documento", "Banco de dados", "Chave", "Coleção"],
+        correctAnswer: 3
       }
     ]
   },
