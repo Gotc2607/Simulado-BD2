@@ -120,6 +120,12 @@ const Quiz = ({ exam, onBack }) => {
         {isText && <div style={{ fontSize: '0.9rem', color: 'var(--primary)', marginTop: '0.5rem' }}>(Digite exatamente a palavra ou expressão solicitada)</div>}
       </div>
 
+      {currentQuestion.phrase && (
+        <div style={{ margin: '1rem 0', padding: '1.5rem', background: 'var(--surface-hover)', borderLeft: '4px solid var(--primary)', borderRadius: '4px', fontStyle: 'italic', fontSize: '1.2rem', color: 'var(--text)' }}>
+          "{currentQuestion.phrase}"
+        </div>
+      )}
+
       {isText ? (
         <div className="text-answer-container" style={{ margin: '2rem 0' }}>
           <input 

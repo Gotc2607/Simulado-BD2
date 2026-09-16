@@ -519,37 +519,43 @@ export const exams = [
       {
         id: 7,
         type: "text",
-        text: "[Índices (index)] Complete a afirmação a seguir que aborda técnicas de pesquisa (consulta) eficiente sobre os dados armazenados em Sistemas Gerenciadores de Banco de Dados.\n\nNão utilize espaços em branco em sua resposta para que ela possa ser considerada correta.\n\nFrase: Uma função de _______ ideal distribui as chaves armazenadas uniformemente por todos os buckets, de forma que todos eles tenham o mesmo número de registros.",
+        text: "[Índices (index)] Complete a afirmação a seguir que aborda técnicas de pesquisa (consulta) eficiente sobre os dados armazenados em Sistemas Gerenciadores de Banco de Dados.\n\nNão utilize espaços em branco em sua resposta para que ela possa ser considerada correta.",
+        phrase: "Uma função de _______ ideal distribui as chaves armazenadas uniformemente por todos os buckets, de forma que todos eles tenham o mesmo número de registros.",
         correctAnswer: "Hash"
       },
       {
         id: 8,
         type: "text",
-        text: "[Índices (index)] Depois do estudo de Visões em SQL (View), complete a frase abaixo com uma das expressões indicando se a frase está informando uma vantagem ou uma desvantagem no uso de View no lugar de Tabela ou várias consultas (SELECTs).\n\nComplete EXATAMENTE com somente uma das expressões (VANTAGEM ou DESVANTAGEM), pois se o complemento que você colocar não for uma destas expressões a sua resposta será considerada INCORRETA.\n\nFrase: Ao criar uma View, se está ocultando linhas ou colunas da tabela base do banco de dados. => _______",
+        text: "[Índices (index)] Depois do estudo de Visões em SQL (View), complete a frase abaixo com uma das expressões indicando se a frase está informando uma vantagem ou uma desvantagem no uso de View no lugar de Tabela ou várias consultas (SELECTs).\n\nComplete EXATAMENTE com somente uma das expressões (VANTAGEM ou DESVANTAGEM), pois se o complemento que você colocar não for uma destas expressões a sua resposta será considerada INCORRETA.",
+        phrase: "Ao criar uma View, se está ocultando linhas ou colunas da tabela base do banco de dados. => _______",
         correctAnswer: "VANTAGEM"
       },
       {
         id: 9,
         type: "text",
-        text: "[Índices (index)] Informe somente a palavra reservada da Linguagem SQL, em Sistemas Gerenciadores de Banco de Dados (SGBD), que corresponde à instrução que remove o usuário e seus privilégios de acesso no SGBD.\n\nNão use nenhum espaço se deseja que sua resposta possa estar correta.\n\nFrase: _______ é a palavra reservada da instrução que remove o usuário e seus privilégios no SGBD.",
+        text: "[Índices (index)] Informe somente a palavra reservada da Linguagem SQL, em Sistemas Gerenciadores de Banco de Dados (SGBD), que corresponde à instrução que remove o usuário e seus privilégios de acesso no SGBD.\n\nNão use nenhum espaço se deseja que sua resposta possa estar correta.",
+        phrase: "_______ é a palavra reservada da instrução que remove o usuário e seus privilégios no SGBD.",
         correctAnswer: "DROP"
       },
       {
         id: 10,
         type: "text",
-        text: "[Índices (index)] Logo após realizar algum ajuste nos privilégios do MySQL ou criar novas permissões, as sessões que estão em operação (usuários conectados por exemplo) não sofreram nenhuma alteração. Informe então no campo abaixo a exata instrução no MySQL que atualiza IMEDIATAMENTE as sessões de possíveis usuários que já estejam conectados neste Sistema Gerenciador de Banco de Dados (SGBD). Não use espaços em branco excessivos para informar a instrução necessária no SQL desse SGBD.\n\nFrase: Qual a instrução SQL solicitada: _______",
+        text: "[Índices (index)] Logo após realizar algum ajuste nos privilégios do MySQL ou criar novas permissões, as sessões que estão em operação (usuários conectados por exemplo) não sofreram nenhuma alteração. Informe então no campo abaixo a exata instrução no MySQL que atualiza IMEDIATAMENTE as sessões de possíveis usuários que já estejam conectados neste Sistema Gerenciador de Banco de Dados (SGBD). Não use espaços em branco excessivos para informar a instrução necessária no SQL desse SGBD.",
+        phrase: "Qual a instrução SQL solicitada: _______",
         correctAnswer: "FLUSH PRIVILEGES"
       },
       {
         id: 11,
         type: "text",
-        text: "[Índices (index)] Reflita sobre a afirmação a seguir e complete somente com o nome desse tipo de recurso disponível nos Sistemas Gerenciadores de Banco de dados (SGBD) relacionais para o uso mais apropriado.\n\nNão coloque em sua resposta nenhum espaço em branco ou expressão no plural, caso queria que sua resposta possa estar correta.\n\nFrase: Diferente de tabelas reais, este recurso, denominado _______ em SQL, NÃO é um objeto físico do SGBD e por isso NÃO ocupa espaço adicional no disco rígido.",
+        text: "[Índices (index)] Reflita sobre a afirmação a seguir e complete somente com o nome desse tipo de recurso disponível nos Sistemas Gerenciadores de Banco de dados (SGBD) relacionais para o uso mais apropriado.\n\nNão coloque em sua resposta nenhum espaço em branco ou expressão no plural, caso queria que sua resposta possa estar correta.",
+        phrase: "Diferente de tabelas reais, este recurso, denominado _______ em SQL, NÃO é um objeto físico do SGBD e por isso NÃO ocupa espaço adicional no disco rígido.",
         correctAnswer: "view"
       },
       {
         id: 12,
         type: "text",
-        text: "[Índices (index)] Analise a instrução SQL a seguir e a complete respeitando a sintaxe correta desta linguagem de banco de dados.\n\nNão use caracteres com acento e nem espaços em branco. Porém, só coloque um único espaço em branco na separação entre palavras, se em sua solução existirem mais que uma palavra na expressão que você poderá escreve como solução correta desta instrução proposta. Lembre que só poderá existir algum espaço em branco separando palavras.\n\nFrase: CREATE _______ preco_idx ON TABLE produto(precoUnitario);",
+        text: "[Índices (index)] Analise a instrução SQL a seguir e a complete respeitando a sintaxe correta desta linguagem de banco de dados.\n\nNão use caracteres com acento e nem espaços em branco. Porém, só coloque um único espaço em branco na separação entre palavras, se em sua solução existirem mais que uma palavra na expressão que você poderá escreve como solução correta desta instrução proposta. Lembre que só poderá existir algum espaço em branco separando palavras.",
+        phrase: "CREATE _______ preco_idx ON TABLE produto(precoUnitario);",
         correctAnswer: "INDEX"
       },
       {
