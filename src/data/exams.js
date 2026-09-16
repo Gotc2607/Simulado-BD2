@@ -474,5 +474,172 @@ export const exams = [
         correctAnswer: 1
       }
     ]
+  },
+  {
+    id: "v2",
+    title: "Simulado 2 (V2)",
+    description: "Questões do Simulado 2 (V2)",
+    questions: [
+      {
+        id: 1,
+        text: "[Índices] A implementação de um índice em uma tabela de dados sobre o atributo de pesquisa melhora o seu desempenho sempre tornando uniforme a distribuição dos dados armazenados em uma tabela, a fim de atender a todos os seus usuários em um mesmo tempo médio de resposta.",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 0
+      },
+      {
+        id: 2,
+        text: "[Índices] Supondo que uma view (visão em SQL) apresente todas as tuplas de sua tabela base, restringindo somente alguns dos atributos dessa tabela que NÃO são apresentados pela view. Nem sempre que a tabela base desta view for atualizada por uma instrução DML (Data Manipulation Language) INSERT ou UPDATE, esses dados serão apresentados pela view se acionada (consultada) logo em seguida.",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 1
+      },
+      {
+        id: 3,
+        text: "[Índices] O tuning de banco de dados é realizado quando se observa que as operações do banco de dados estão lentas, como na manipulação de dados para emissão de relatórios, geração de gráficos ou simplesmente no fornecimento de dados consultados do banco de dados",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 1
+      },
+      {
+        id: 4,
+        text: "[Controle de Acesso] O processo de AUDITORIA consiste em dizer o que um usuário do banco de dados pode fazer.",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 0
+      },
+      {
+        id: 5,
+        text: "[Visões] Conhecendo as características dos objetos denominados VISÕES (VIEW) em banco de dados se observa que, diferentemente de tabelas \"reais\", as visões NÃO armazenam novos dados fisicamente no Sistema Gerenciador de Banco de Dados e por isso não ocupam mais espaço específico em disco rígido para guardar os seus DADOS.",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 1
+      },
+      {
+        id: 6,
+        text: "[Visões] Acerca dos conceitos de otimização de consultas em SQL e as técnicas de análise de desempenho, julgue a afirmação sobre as visões em SQL (VIEW). \"Uma view materializada armazena apenas a consulta SQL que define e apresenta o resultado sempre atualizado de todas as operações de manipuilação de dados (DML) no Sistema Gerenciador de Banco de Dados (SGBD)\".",
+        options: ["Falso", "Verdadeiro"],
+        correctAnswer: 0
+      },
+      {
+        id: 7,
+        type: "text",
+        text: "[Índices (index)] Complete a afirmação a seguir que aborda técnicas de pesquisa (consulta) eficiente sobre os dados armazenados em Sistemas Gerenciadores de Banco de Dados.\n\nNão utilize espaços em branco em sua resposta para que ela possa ser considerada correta.\n\nFrase: Uma função de _______ ideal distribui as chaves armazenadas uniformemente por todos os buckets, de forma que todos eles tenham o mesmo número de registros.",
+        correctAnswer: "Hash"
+      },
+      {
+        id: 8,
+        type: "text",
+        text: "[Índices (index)] Depois do estudo de Visões em SQL (View), complete a frase abaixo com uma das expressões indicando se a frase está informando uma vantagem ou uma desvantagem no uso de View no lugar de Tabela ou várias consultas (SELECTs).\n\nComplete EXATAMENTE com somente uma das expressões (VANTAGEM ou DESVANTAGEM), pois se o complemento que você colocar não for uma destas expressões a sua resposta será considerada INCORRETA.\n\nFrase: Ao criar uma View, se está ocultando linhas ou colunas da tabela base do banco de dados. => _______",
+        correctAnswer: "VANTAGEM"
+      },
+      {
+        id: 9,
+        type: "text",
+        text: "[Índices (index)] Informe somente a palavra reservada da Linguagem SQL, em Sistemas Gerenciadores de Banco de Dados (SGBD), que corresponde à instrução que remove o usuário e seus privilégios de acesso no SGBD.\n\nNão use nenhum espaço se deseja que sua resposta possa estar correta.\n\nFrase: _______ é a palavra reservada da instrução que remove o usuário e seus privilégios no SGBD.",
+        correctAnswer: "DROP"
+      },
+      {
+        id: 10,
+        type: "text",
+        text: "[Índices (index)] Logo após realizar algum ajuste nos privilégios do MySQL ou criar novas permissões, as sessões que estão em operação (usuários conectados por exemplo) não sofreram nenhuma alteração. Informe então no campo abaixo a exata instrução no MySQL que atualiza IMEDIATAMENTE as sessões de possíveis usuários que já estejam conectados neste Sistema Gerenciador de Banco de Dados (SGBD). Não use espaços em branco excessivos para informar a instrução necessária no SQL desse SGBD.\n\nFrase: Qual a instrução SQL solicitada: _______",
+        correctAnswer: "FLUSH PRIVILEGES"
+      },
+      {
+        id: 11,
+        type: "text",
+        text: "[Índices (index)] Reflita sobre a afirmação a seguir e complete somente com o nome desse tipo de recurso disponível nos Sistemas Gerenciadores de Banco de dados (SGBD) relacionais para o uso mais apropriado.\n\nNão coloque em sua resposta nenhum espaço em branco ou expressão no plural, caso queria que sua resposta possa estar correta.\n\nFrase: Diferente de tabelas reais, este recurso, denominado _______ em SQL, NÃO é um objeto físico do SGBD e por isso NÃO ocupa espaço adicional no disco rígido.",
+        correctAnswer: "view"
+      },
+      {
+        id: 12,
+        type: "text",
+        text: "[Índices (index)] Analise a instrução SQL a seguir e a complete respeitando a sintaxe correta desta linguagem de banco de dados.\n\nNão use caracteres com acento e nem espaços em branco. Porém, só coloque um único espaço em branco na separação entre palavras, se em sua solução existirem mais que uma palavra na expressão que você poderá escreve como solução correta desta instrução proposta. Lembre que só poderá existir algum espaço em branco separando palavras.\n\nFrase: CREATE _______ preco_idx ON TABLE produto(precoUnitario);",
+        correctAnswer: "INDEX"
+      },
+      {
+        id: 13,
+        text: "[Controle de Acesso] O MySQL aceita a criação de vários perfis para usuários terem acessos adequados as suas responsabilidades na organização, possibilitando ao administrador fornecer privilégios coerentes para cada usuário.\n\nSelecione qual instrução corresponde a criação de PERFIS no Sistema Gerenciador de Banco de Dados MySQL.",
+        options: [
+          "grant",
+          "create user",
+          "revoke",
+          "nenhum dos comandos relacionados."
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 14,
+        text: "[Controle de Acesso] Selecione a opção que NÃO corresponde a uma característica dos privilégios que podem ser fornecidos aos usuários de um Sistema Gerenciador de Banco de Dados Relacional (SGBDR) quando a opção WITH ADMIN OPTION estiver sendo usada para conceder o privilégio sobre um recurso do banco de dados.",
+        options: [
+          "Só pode ser fornecido para usuários e não para perfis (papéis) de usuários do banco de dados.",
+          "Permite ao usuário que recebeu o privilégio repassar para outros usuários do sistema.",
+          "Permite revogar o privilégio concedido a outro usuário sobre o recurso do banco de dados em questão.",
+          "Torna possível alterar o privilégio de qualquer usuário que tenha algum privilégio sobre o recurso do banco de dados em questão."
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 15,
+        text: "[Visões (view)] Observando as características das visões (VIEW) em SQL NÃO é CORRETO afirmar que:",
+        options: [
+          "As visões (consultas) são armazenadas de forma persistente no Sistema Gerenciador de Banco de Dados (SGBD).",
+          "As visões oferecem suporte para a execução de consultas avançadas que podem ser destinadas para a mineração de dados (Data Mining).",
+          "As visões correspondem a um resumo do Sistema Gerenciador de Banco de Dados (SGBD) em suas consultas.",
+          "As visões são livres das restrições do processamento de transações no SGBD."
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 16,
+        text: "[Índices (index)] Nem sempre a chave de procura, também chamada de chave de pesquisa, corresponde ao atributo que armazena as tuplas ordenadas fisicamente e nem é uma chave primária da tabela pesquisada.\n\nVocê como projetista de um banco de dados da empresa que tem a realidade indicada acima tomaria qual decisão para atender aos seus usuários mais eficientemente?",
+        options: [
+          "Orientaria o usuário a fazer pesquisa por outro atributo que fosse a chave primária ou que ordena fisicamente o arquivo de dados.",
+          "Estabeleceria uma junção (join) entre a chave de pesquisa e a chave primária de uma tabela relacionada.",
+          "Alteraria a ordenação de armazenamento físico das tuplas no arquivo de dados.",
+          "Criaria um índice para o atributo da pesquisa."
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 17,
+        text: "[Índices (index)] Diante de uma possível situação que será criado um grande arquivo de índice, qual ou quais seriam as opções de solução para agilização no uso desse importante recurso de otimização (Índice) na execução de pesquisas (consultas SQL) em Sistemas Gerenciadores de Banco de Dados Relacionais.",
+        options: [
+          "Utilizar índices de níveis múltiplos.",
+          "Utilizar uma função Hash ideal.",
+          "Realizar busca binária sobre o índice mais externo de uma implementação de níveis múltiplos de índices.",
+          "A criação de índice ESPARSO como índice primário."
+        ],
+        correctAnswer: [0, 1, 2, 3]
+      },
+      {
+        id: 18,
+        text: "[Índices (index)] Reflita sobre os esclarecimentos sobre o TUNING em processos de Banco de Dados Relacionais (BDR), e selecione somente as opções que estiverem corretas com este importante processo em um Projeto Físico de Banco de Dados.",
+        options: [
+          "A meta do tuning é aumentar a eficiência e a velocidade do BDR, adicionando mais recursos, como memória ou processadores.",
+          "O tuning de BDR envolve uma análise aprofundada da infraestrutura de dados existente e dos processos de negócio de uma organização (empresa).",
+          "O tuning de BDR envolve uma análise somente nas consultas (SELECTs) que recuperam dados do BDR.",
+          "O objetivo dele é aumentar a eficiência e a velocidade do BDR, sem simplesmente adicionar mais recursos, como memória ou processadores."
+        ],
+        correctAnswer: [1, 3]
+      },
+      {
+        id: 19,
+        text: "[Controle de Acesso] O controle de acesso é relevante para a segurança de um Banco de Dados.\n\nAssim, observe qual ou quais das instruções está correta para criar o usuário sasuke no banco de dados MySQL e a(s) selecione.",
+        options: [
+          "CREATE USER 'sasuke'@'localhost' IDENTIFIED BY 'boladefogo';",
+          "CREATE USER 'sasuke' IDENTIFY BY 'boladefogo';",
+          "CREATE USER 'sasuke' IDENTIFIED 'boladefogo';",
+          "CREATE USER 'sasuke'@'localhost' IDENTIFY 'boladefogo';"
+        ],
+        correctAnswer: [0]
+      },
+      {
+        id: 20,
+        text: "[Visões (view)] Suponha as tabelas base e a visão chamada VVV. ALUNO(nomeA,matricula,dtNasc) MATRICULA(idDisciplina,matricula,ano,nota) VVV(nomeA,matricula,idDisciplina,ano)\n\nCREATE VIEW VVV (nomeA,matricula,idDisciplina) AS SELECT a.nomeA,m.matricula, m.idDisciplina FROM ALUNO a JOIN MATRICULA m ON a.matricula = m.matricula;\n\nSelecione a opção(ões) correta(s) para a instrução DML abaixo: UPDATE VVV SET nomeA='Carlos' WHERE matricula=12329;",
+        options: [
+          "Instrução DML será executada porque a visão não possui nenhum agrupamento ou ordenação.",
+          "Instrução não será executada porque nenhuma instrução DML pode ser efetuada sobre uma VISÃO em Banco de Dados.",
+          "Instrução DML será executada sobre as tabelas base porque não usa o operador DISTINCT em seu SELECT.",
+          "Instrução DML não será executada porque não preserva a chave das tabelas base envolvidas."
+        ],
+        correctAnswer: [3]
+      }
+    ]
   }
 ];
