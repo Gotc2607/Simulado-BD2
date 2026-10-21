@@ -651,7 +651,7 @@ export const exams = [
   {
     id: "v3",
     title: "Simulado 3 (V3)",
-    description: "Questões do Simulado 3 (V3) - Otimização em Consultas SQL",
+    description: "Questões do Simulado 3 (V3) (22 questões)",
     questions: [
       {
         id: 1,
@@ -708,6 +708,182 @@ export const exams = [
           "Varrer arquivos de dados que estão ordenados procurando os dados que serão apresentados."
         ],
         correctAnswer: [0, 2]
+      },
+      {
+        id: 7,
+        text: "[Tecnologias de Banco de Dados] Qual modelo de banco de dados permite que a estrutura de dados armazenada reflita diretamente as classes e objetos de uma linguagem de programação orientada a objetos (como Java ou C++), suportando herança e polimorfismo de forma nativa?",
+        options: [
+          "Banco de Dados Temporal",
+          "Banco de Dados Orientado a Objetos",
+          "Banco de Dados Ativo",
+          "Banco de Dados Dedutivo"
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 8,
+        text: "[Tecnologias de Banco de Dados] A principal característica de um Banco de Dados Distribuído é:",
+        options: [
+          "O armazenamento de dados exclusivamente em formato de texto.",
+          "A centralização física de todos os dados em um único servidor de alta potência.",
+          "O armazenamento de dados em múltiplos locais físicos conectados por rede, aparecendo para o usuário como um sistema único lógico.",
+          "A execução de regras baseadas em inferência lógica."
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 9,
+        text: "[Tecnologias de Banco de Dados] Qual tecnologia de banco de dados é projetada especificamente para operar de forma eficiente em cenários onde a conectividade de rede é instável ou intermitente, utilizando técnicas de sincronização assíncrona?",
+        options: [
+          "Bancos de Dados Geográficos",
+          "Bancos de Dados Paralelos",
+          "Bancos de Dados Multimídia",
+          "Bancos de Dados Móveis"
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 10,
+        text: "[Tecnologias de Banco de Dados] Em um sistema de controle de frotas, é necessário realizar consultas SQL que retornem \"quais veículos estão em um raio de 5km de um determinado endereço\". Qual banco de dados é especialista em tratar esse tipo de dado?",
+        options: [
+          "Banco de Dados Textual",
+          "Banco de Dados Geográfico",
+          "Banco de Dados Dedutivo",
+          "Banco de Dados em Colunas"
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 11,
+        text: "[Tecnologias de Banco de Dados] Quando uma aplicação exige motores de busca avançados capazes de realizar pesquisas fonéticas, buscar por sinônimos e indexar gigabytes de documentos em formato de texto livre, a melhor escolha tecnológica é:",
+        options: [
+          "Banco de Dados Textual",
+          "Banco de Dados Temporal",
+          "Banco de Dados Relacional padrão",
+          "Base de Dados das Coisas (DoT)"
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 12,
+        text: "[Tecnologias de Banco de Dados] O gerenciamento de dados que incluem fluxos (streams) contínuos, onde a entrega da informação possui restrições de tempo real (como em vídeos ou áudio sob demanda), é um desafio resolvido pelos:",
+        options: [
+          "Bancos de Dados Autônomos",
+          "Bancos de Dados Dedutivos",
+          "Bancos de Dados Multimídia",
+          "Bancos de Dados Semiestruturados"
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 13,
+        text: "[Tecnologias de Banco de Dados] O objetivo principal de um Banco de Dados Paralelo é:",
+        options: [
+          "Distribuir dados em diferentes países para fins de redundância.",
+          "Melhorar o desempenho processando múltiplas partes de uma mesma consulta simultaneamente em diferentes processadores.",
+          "Inferir novas informações a partir de dados existentes.",
+          "Sincronizar dados com dispositivos móveis offline."
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 14,
+        text: "[Tecnologias de Banco de Dados] Qual tipo de banco de dados permite responder nativamente a consultas do tipo \"Qual era o valor do produto X no dia 15 de março do ano passado, independentemente das alterações feitas depois disso\"?",
+        options: [
+          "Banco de Dados Temporal",
+          "Banco de Dados Ativo",
+          "Banco de Dados Geográfico",
+          "Banco de Dados em Colunas"
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 15,
+        text: "[Tecnologias de Banco de Dados] Um banco de dados que utiliza inteligência artificial para realizar o tuning automático de performance e aplicar correções de segurança sem necessidade de interrupção (downtime) ou ação de um DBA é classificado como:",
+        options: [
+          "Dedutivo",
+          "Autônomo (Auto-gerenciado)",
+          "Ativo",
+          "Semiestruturado"
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 16,
+        text: "[Tecnologias de Banco de Dados] Se o banco de dados armazena os fatos \"João é pai de Maria\" e \"Maria é mãe de José\", e possui uma regra lógica que infere que \"o pai de um progenitor é um avô\", esse sistema é um exemplo de Banco de Dados:",
+        options: [
+          "Orientado a Objetos",
+          "Distribuído",
+          "Ativo",
+          "Dedutivo"
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 17,
+        text: "[Tecnologias de Banco de Dados] O paradigma ECA (Evento-Condição-Ação) é a base de funcionamento de qual tipo de banco de dados, que é capaz de reagir automaticamente a mudanças de estado sem a necessidade de intervenção explícita da aplicação cliente?",
+        options: [
+          "Bancos de Dados Temporais",
+          "Bancos de Dados Dedutivos",
+          "Bancos de Dados Ativos",
+          "Bancos de Dados Multimídia"
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 18,
+        text: "[Tecnologias de Banco de Dados] Qual o principal motivador que leva empresas a adotarem Bancos de Dados NoSQL em detrimento aos SGBDRs tradicionais em aplicações modernas de internet?",
+        options: [
+          "A necessidade de aplicar as regras de normalização de forma mais rígida.",
+          "A obrigatoriedade do uso de linguagem SQL pura para todas as transações.",
+          "A flexibilidade de esquema (schema-less) e a facilidade de escalabilidade horizontal.",
+          "A criação de tabelas virtuais baseadas em herança de classes."
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 19,
+        text: "[Tecnologias de Banco de Dados] Em ambientes de Data Warehouse onde é necessário calcular a \"soma total de vendas do mês\" analisando milhões de registros, qual formato de armazenamento físico de banco de dados oferece o melhor desempenho de leitura (I/O) ignorando atributos desnecessários da tabela?",
+        options: [
+          "Banco de Dados em Colunas",
+          "Banco de Dados Orientado a Objetos",
+          "Banco de Dados Móvel",
+          "Banco de Dados em Grafos"
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 20,
+        text: "[Tecnologias de Banco de Dados] Tecnologias de armazenamento que operam de forma nativa com arquivos cujos esquemas são definidos no próprio dado por meio de tags ou chaves (como o formato JSON ou XML) são denominadas Bancos de Dados:",
+        options: [
+          "Relacionais Normatizados",
+          "Geográficos",
+          "Semiestruturados",
+          "Baseados em Tuplas"
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 21,
+        text: "[Tecnologias de Banco de Dados] A arquitetura de banco de dados projetada especificamente para ingerir, processar e analisar volumes massivos de dados contínuos gerados por sensores e dispositivos inteligentes conectados (Internet das Coisas) é conhecida como:",
+        options: [
+          "Database of Things (DoT)",
+          "Base de Conhecimento",
+          "Objeto-Relacional",
+          "Banco de Dados Textual"
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 22,
+        text: "[Tecnologias de Banco de Dados] Em sistemas especialistas, a camada que armazena informações estruturadas não apenas como dados isolados, mas através de ontologias, grafos semânticos e representação complexa para embasar a tomada de decisão da IA, é chamada de:",
+        options: [
+          "Banco de Dados Multimídia",
+          "Banco de Dados de Conhecimento (Knowledge Database)",
+          "Banco de Dados em Colunas",
+          "Banco de Dados Móvel"
+        ],
+        correctAnswer: 1
       }
     ]
   }
