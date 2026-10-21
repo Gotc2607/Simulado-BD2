@@ -674,7 +674,7 @@ export const exams = [
           "A segunda consulta tem melhor desempenho que a primeira do enunciado.",
           "A comparação de desempenho não é coerente porque as duas consultas não são equivalentes."
         ],
-        correctAnswer: 0
+        correctAnswer: 1
       },
       {
         id: 4,
