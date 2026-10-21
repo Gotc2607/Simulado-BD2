@@ -651,7 +651,7 @@ export const exams = [
   {
     id: "v3",
     title: "Simulado 3 (V3)",
-    description: "Questões do Simulado 3 (V3) (22 questões)",
+    description: "Questões do Simulado 3 (V3) (38 questões)",
     questions: [
       {
         id: 1,
@@ -884,6 +884,152 @@ export const exams = [
           "Banco de Dados Móvel"
         ],
         correctAnswer: 1
+      },
+      {
+        id: 23,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Os Sistemas Gerenciadores de Banco de Dados Relacionais (SGBDR) não possuem muitos recursos de programação procedural, dividindo a responsabilidade de implementações coerentes com as aplicações que utilizarão seus recursos para armazenar os dados.",
+        options: ["Verdadeiro", "Falso"],
+        correctAnswer: 1
+      },
+      {
+        id: 24,
+        text: "[Programação Procedural no Servidor de Banco de Dados] A possibilidade da programação procedural nos Sistemas Gerenciadores de Banco de Dados (SGBD) enriquecem e flexibilizam a sua utilização de forma muito interessante para a proteção dos dados e das regras de negócios importantes para manter a integridade no SGBD. Diante desse potencial, a linguagem procedural (PLProcedural Languange) de cada SGBD possibilita invocar explicitamente um trigger que garanta as regras de negócios coerentes a proteção dos dados.",
+        options: ["Verdadeiro", "Falso"],
+        correctAnswer: 1
+      },
+      {
+        id: 25,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Imagine uma situação em que a criação de restrições de consistência e validade, que não possam ser implementadas com constraints, precisem ser garantidas pelo Sistema Gerenciador de Banco de Dados (SGBD) para assegurar o que estará sendo armazenado envolvendo algumas tabelas. Selecione qual seria o melhor recurso procedural do SGBD para garantir essa implementação.",
+        options: [
+          "Stored Procedure",
+          "Constraint Unique",
+          "Function",
+          "Trigger"
+        ],
+        correctAnswer: 3
+      },
+      {
+        id: 26,
+        text: "[Programação Procedural no Servidor de Banco de Dados] A elaboração de um TRIGGER possui características específicas a serem implementadas no servidor de banco de dados, NÃO sendo correto afirmar o que? Selecione a afirmação que está INCORRETA para o recurso de TRIGGER nos Sistemas Gerenciadores de Banco de Dados (SGBD).",
+        options: [
+          "O trigger deve ser declarado como uma function para trabalhar com parâmetros e retornar seu resultado.",
+          "O trigger é armazenado no banco de dados e pode ser composto de instruções em SQL e da linguagem procedural do SGBD.",
+          "O gatilho (trigger) pode referenciar variáveis especiais com os identificadores de correlação NEW e OLD.",
+          "Existem triggers especificas para trabalharem com transações envolvendo DML e DDL do SGBD."
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 27,
+        text: "[Programação Procedural no Servidor de Banco de Dados] SQL é uma linguagem de consulta estruturada, um padrão de gerenciamento de dados que interage com os principais bancos de dados baseados no modelo relacional. Em bancos de dados Cliente/Servidor, o recurso trigger permite executar tarefas relacionadas com validações, consistência de dados, restrições de acesso e rotinas de segurança, e que utiliza um bloco de códigos SQL. Nesse caso, os comandos que disparam um trigger podem ser:",
+        options: [
+          "DROP, ALTER e REVOKE",
+          "UPDATE, DROP e ALTER",
+          "DELETE, INSERT e UPDATE",
+          "REVOKE, DELETE e INSERT"
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 28,
+        text: "[Programação Procedural no Servidor de Banco de Dados] A programação procedural é uma Linguagem Estruturada em blocos, sendo o bloco um elemento fundamental para se escrever um código procedural em Stored Procedure. Neste tipo de programação no servidor de banco de dados um bloco é delimitado por quais palavras reservadas, selecione a opção correta.",
+        options: [
+          "BEGIN END;",
+          "START STOP;",
+          "OPEN CLOSE;",
+          "DECLARE EXCEPTION."
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 29,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Analise as instruções a seguir e selecione as afirmações corretas.\nCREATE TRIGGER Acessos AFTER LOGON ON DATABASE\n BEGIN\nINSERT INTO dadosAcesso VALUES (USER, 'Acesso');\n END;",
+        options: [
+          "Implementa um Stored Procedure que insere dados na estrutura dadosAcesso.",
+          "Implementa um gatilho que será disparado depois da conexão com uma base de dados.",
+          "Realiza uma operação implícita mediante um evento na base de dados.",
+          "Implementa um gatilho que será disparado antes da conexão com uma base de dados."
+        ],
+        correctAnswer: [1, 2]
+      },
+      {
+        id: 30,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Considere no MySQL a existência do procedimento VERIFICAVOTO, que recebe dois parâmetros: idCandidato e nroVotos. Foi criado o trigger TRGVOTO na tabela CANDIDATO que é acionado antes da operação de INSERT e chama esse procedimento para executar a lógica de negócios com os novos idCandidato e número de votos como parâmetros.\nCREATE TRIGGER TRGVOTO x ON CANDIDATO FOR EACH ROW\nBEGIN\n  VERIFICAVOTO( y );\nEND;\nIndique a opção correta que preencheria as lacunas indicadas como x e y acima.",
+        options: [
+          "ABOVE - new idCandidato, new nroVotos",
+          "BEFORE - :new.idCandidato, :new.nroVotos",
+          "BEFORE - new.idCandidato, new.nroVotos",
+          "AFTER - :new.idCandidato, :new.nroVotos"
+        ],
+        correctAnswer: 2
+      },
+      {
+        id: 31,
+        text: "[Programação Procedural no Servidor de Banco de Dados] A Programação Procedural em um servidor de banco de dados promove algumas vantagens para o seu funcionamento coerente. Selecione somente as vantagens para o processamento do Servidor do Sistema Gerenciador de Banco de Dados (SGBD) que utiliza a Programação Procedural.",
+        options: [
+          "Suporte integral da Linguagem SQL utilizada pelo SGBD.",
+          "Definição de regras de negócio não abrangidas pelo projeto relacional no SGBD.",
+          "Melhorar performance do SGBD.",
+          "Programação procedural integrada com o SGBD."
+        ],
+        correctAnswer: [1, 2, 3]
+      },
+      {
+        id: 32,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Num comando de criação de um gatilho (trigger) no MySQL, nas recentes edições, há um conjunto de elementos sintáticos que podem ser utilizados para determinar quando os procedimentos devem ser acionados e quais são esses procedimentos. As possíveis combinações de \"quando x procedimento\" válidas para triggers de transações são:",
+        options: [
+          "CREATION/REMOTION combinados com READ/WRITE",
+          "AFTER/BEFORE combinados com DELETE/INSERT/UPDATE",
+          "IN/OUT combinados com CREATION/REMOTION",
+          "INIT/END combinados com INPUT/OUTPUT"
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 33,
+        text: "[Programação Procedural no Servidor de Banco de Dados] Em programação procedural em banco de dados podemos utilizar de processamento condicional no MySQL (versão de referência 8.0). Assinale a alternativa que esteja escrita de forma correta.",
+        options: [
+          "IF (contador > 1) THEN SET NEW.quantidade = NULL; ENDIF;",
+          "IF contador > 1 THEN SET NEW.quantidade = NULL; END IF;",
+          "IF (contador > 1) SET NEW.quantidade = NULL; END IF;",
+          "IF contador > 1 SET NEW.quantidade = NULL; ENDIF;"
+        ],
+        correctAnswer: 1
+      },
+      {
+        id: 34,
+        type: "text",
+        text: "[Programação Procedural no Servidor de Banco de Dados] A utilização de IDENTIFICADORES DE CORRELAÇÃO na implementação de Triggers no Sistema Gerenciador de Banco de Dados (SGBD) possibilita a elaboração de códigos mais eficientes por permitir manipular dados em momentos diferentes aos seus processamentos. Esses IDENTIFICADORES são tratados pelo compilador do SGBD como registros, mas realmente não são. Diante de suas características, complete a frase a seguir escrevendo SOMENTE o IDENTIFICADOR mais correto que permite utilizar os valores anteriores a uma remoção realizada por uma Trigger:",
+        phrase: "O Identificador de Correlação dos SGBDs que permite a utilização de dados anteriores a um remoção em uma trigger é: _______.",
+        correctAnswer: "old"
+      },
+      {
+        id: 35,
+        type: "text",
+        text: "[Programação Procedural no Servidor de Banco de Dados] A programação em servidores de banco de dados pode acontece de maneira procedural, envolvendo codificações específicas as necessidades existentes e possíveis por tal programação. Complete a afirmação abaixo, respeitando a grafia correta no SINGULAR e em INGLÊS, de qual recurso de programação é possível nestes servidores. Este recurso tem as seguintes características: programado de forma procedural, pode receber parâmetros, só é acionado (executado) explicitamente.",
+        phrase: "Além das functions, os servidores de Banco de Dados também podem ser programados por _______.",
+        correctAnswer: "stored procedure"
+      },
+      {
+        id: 36,
+        type: "text",
+        text: "[Programação Procedural no Servidor de Banco de Dados] Preencha a lacuna de forma coerente com a frase a seguir que aborda um recurso interessante da programação procedural nos Sistemas Gerenciadores de Banco de Dados (SGBD). Esse recurso envolve um conjunto ativo de registros (tuplas) retornados por uma consulta (SELECT) para a memória e não para a tela do usuário.",
+        phrase: "Um _______ lida com uma área de contexto na memória que recebeu dado(s) proveniente(s) de uma instrução SQL.",
+        correctAnswer: "cursor"
+      },
+      {
+        id: 37,
+        type: "text",
+        text: "[Programação Procedural no Servidor de Banco de Dados] É um tipo especial de procedimento armazenado, que é executado sempre que há uma tentativa de modificar os dados de uma tabela que é protegida por ele. Qual o nome desse recurso de programação do servidor de banco de dados? Informe o seu nome no singular e sem nenhum espaço em branco, completando a frase corretamente.",
+        phrase: "Esse tipo de recurso de programação do servidor de banco de dados é chamado de _______.",
+        correctAnswer: "trigger"
+      },
+      {
+        id: 38,
+        type: "text",
+        text: "[Programação Procedural no Servidor de Banco de Dados] Considerando a linguagem procedural do MySQL, em uma procedure ou function, a forma de declarar a variável 'cadastro' que representa um registro com todos os atributos da tabela Empregado seria? Complete a instrução para criar cadastro com o mesmo tipo de toda tupla de Empregado, sem usar nenhum espaço.",
+        phrase: "cadastro Empregado_______;",
+        correctAnswer: "%ROWTYPE"
       }
     ]
   }
