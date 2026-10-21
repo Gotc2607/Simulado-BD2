@@ -647,5 +647,68 @@ export const exams = [
         correctAnswer: [3]
       }
     ]
+  },
+  {
+    id: "v3",
+    title: "Simulado 3 (V3)",
+    description: "Questões do Simulado 3 (V3) - Otimização em Consultas SQL",
+    questions: [
+      {
+        id: 1,
+        text: "[Otimização em Consultas SQL] O objetivo da Otimização de Consultas SQL é aumentar a eficiência e a eficácia dos processos, garantindo que as operações no banco de dados relacional sejam eficazes e processadas no tempo adequado aos recursos disponíveis no computador servidor do banco de dados (SGBD).",
+        options: ["Verdadeiro", "Falso"],
+        correctAnswer: 0
+      },
+      {
+        id: 2,
+        text: "[Otimização em Consultas SQL] As consultas SQL (SELECT) mais simples, SEM as cláusulas WHERE, GROUP BY, JOINs e ORDER BY são mais rápidas porque NÃO precisam usar memória para recuperar os dados da tabela de origem antes de apresentar os resultados recuperados para o usuário visualizá-los.",
+        options: ["Verdadeiro", "Falso"],
+        correctAnswer: 1
+      },
+      {
+        id: 3,
+        text: "[Otimização em Consultas SQL] Aprecie as instruções SQL abaixo e selecione a opção mais correta sobre o desempenho de cada consulta, supondo que CADA tabela possua 100 mil tuplas?\n-- PRIMEIRA\nSELECT e.nome, p.dsProfissao\n  FROM EMPREGADO e, PROFISSAO p\n WHERE e.idProfissao = p.idProfissao\n    AND p.dsProfissao = 'Analista de Sistemas';\n-- SEGUNDA\nSELECT e.nome, p.dsProfissao\n  FROM EMPREGADO e, PROFISSAO p\n WHERE p.dsProfissao = 'Analista de Sistemas'\n    AND e.idProfissao = p.idProfissao;",
+        options: [
+          "As duas consultas do enunciado têm o mesmo desempenho na execução.",
+          "A primeira consulta tem melhor desempenho que a segunda consulta proposta no enunciado.",
+          "A segunda consulta tem melhor desempenho que a primeira do enunciado.",
+          "A comparação de desempenho não é coerente porque as duas consultas não são equivalentes."
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 4,
+        text: "[Otimização em Consultas SQL] Encontrar a consulta mais eficiente a ser executada é responsabilidade de qual componente do Sistema Gerenciador de Banco de Dados Relacional.",
+        options: [
+          "Otimizador",
+          "Avaliador",
+          "Analisador sintático e tradutor",
+          "Modelagem de dados"
+        ],
+        correctAnswer: 0
+      },
+      {
+        id: 5,
+        text: "[Otimização em Consultas SQL] Indique qual ou quais das afirmações NÃO correspondem a ação do processo de OTIMIZAÇÃO para realização de consultas nos Sistemas Gerenciadores Bancos de Dados Relacionais (SGBDR)?",
+        options: [
+          "Selecionar uma estratégia detalhada para o processamento da consulta.",
+          "Encontrar as expressões equivalentes a álgebra relacional desejada, onde principalmente diminua o acesso a disco.",
+          "Estimar os custos dos planos de avaliação para posterior utilização.",
+          "Compilar a instrução SQL."
+        ],
+        correctAnswer: [3]
+      },
+      {
+        id: 6,
+        text: "[Otimização em Consultas SQL] Selecione a opção ou opções que indicam qual a função do Otimizador em um Sistema Gerenciador de Banco de Dados no processamento de consultas?",
+        options: [
+          "Propor um plano de avaliação da consulta que gere o mesmo resultado da instrução fornecida pelo usuário.",
+          "Traduzir da linguagem de alto nível do BD para expressões que podem ser implementadas no nível físico do sistema de arquivo.",
+          "Encontrar uma maneira menos onerosa de gerar o resultado desejado de uma pesquisa solicitada pelo usuário.",
+          "Varrer arquivos de dados que estão ordenados procurando os dados que serão apresentados."
+        ],
+        correctAnswer: [0, 2]
+      }
+    ]
   }
 ];
